@@ -33,7 +33,7 @@ export default function Home() {
             <div className="lg:w-1/2 mt-8 lg:mt-0">
               <div className="relative w-full lg:h-64 sm:h-72 md:h-80 lg:h-96">
                 <Image
-                  src="/your-image-path.jpg"
+                  src={"/your-image-path.jpg"}
                   alt="Hero Image"
                   layout="fill"
                   objectFit="cover"
