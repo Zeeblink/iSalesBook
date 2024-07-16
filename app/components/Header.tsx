@@ -25,10 +25,10 @@ const Header: React.FC<HeaderProps> = () => {
                     <Link href="/" className="block text-gray-700 hover:text-orange-600">
                         Home
                     </Link>
-                    <Link href="/features" className="block text-gray-700 hover:text-orange-600">
+                    <Link href="#features" className="block text-gray-700 hover:text-orange-600">
                         Features
                     </Link>
-                    <Link href="/pricing" className="block text-gray-700 hover:text-orange-600">
+                    <Link href="#pricing" className="block text-gray-700 hover:text-orange-600">
                         Pricing
                     </Link>
                     <Link href="/blog" className="block text-gray-700 hover:text-orange-600">
@@ -64,10 +64,10 @@ const Header: React.FC<HeaderProps> = () => {
                         <Link href="/" className="block text-gray-700 hover:text-orange-600">
                             Home
                         </Link>
-                        <Link href="/features" className="block text-gray-700 hover:text-orange-600">
+                        <Link href="#features" className="block text-gray-700 hover:text-orange-600">
                             Features
                         </Link>
-                        <Link href="/pricing" className="block text-gray-700 hover:text-orange-600">
+                        <Link href="#pricing" className="block text-gray-700 hover:text-orange-600">
                             Pricing
                         </Link>
                         <Link href="/blog" className="block text-gray-700 hover:text-orange-600">
