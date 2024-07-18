@@ -11,7 +11,7 @@ const Header: React.FC<HeaderProps> = () => {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <header className="bg-white shadow-md">
+        <header className="bg-white shadow">
             <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center p-4 md:p-6">
                 <div className="flex justify-between items-center w-full lg:w-auto lg:mb-0">
                     <div className="text-2xl font-bold text-orange-600">
@@ -47,10 +47,10 @@ const Header: React.FC<HeaderProps> = () => {
                     </Link>
                 </nav>
                 <div className="flex items-center hidden lg:flex">
-                    <Link href="/sign-in" className="block w-full lg:inline-block lg:w-auto bg-gray-200 text-gray-600 px-6 py-3 rounded-md text-center">
-                        Sign In
+                    <Link href="/login" className="block w-full lg:inline-block lg:w-auto  text-gray-600 px-6 py-3 rounded-md text-center">
+                        Log In
                     </Link>
-                    <Link href="/demo" className="block w-full lg:inline-block lg:w-auto bg-orange-600 text-white px-6 py-3 rounded-md text-center">
+                    <Link href="/request-demo" className="block w-full lg:inline-block lg:w-auto bg-orange-600 text-white px-6 py-3 rounded-md text-center">
                         Request a demo
                     </Link>
                 </div>
@@ -88,10 +88,10 @@ const Header: React.FC<HeaderProps> = () => {
                         <Link href="/contact" className="block text-gray-700 hover:text-orange-600">
                             Contact
                         </Link>
-                        <Link href="/sign-in" className="btn btn-sm">
-                            Sign In
+                        <Link href="/login" className="btn btn-sm">
+                            Log In
                         </Link>
-                        <Link href="/demo" className="block bg-orange-600 text-white px-6 py-3 rounded-md text-center">
+                        <Link href="/request-demo" className="block bg-orange-600 text-white px-6 py-3 rounded-md text-center">
                             Request a demo
                         </Link>
                     </nav>

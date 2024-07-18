@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="">
       {/* Hero sction */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      <section className="bg-white py-12 sm:py-16 lg:py-20 h-screen">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 text-center lg:text-left">
@@ -17,10 +17,10 @@ export default function Home() {
               </p>
               <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center lg:justify-start">
                 <Link
-                  href="#"
+                  href="/request-demo"
                   className="inline-block bg-orange-600 text-white px-6 py-3 rounded-md text-base font-medium hover:bg-orange-700 transition-colors duration-300"
                 >
-                  Get Started
+                  Request a demo
                 </Link>
                 <Link
                   href="#"
@@ -31,15 +31,18 @@ export default function Home() {
               </div>
             </div>
             <div className="lg:w-1/2 mt-8 lg:mt-0">
-              <div className="relative w-full lg:h-64 sm:h-72 md:h-80 lg:h-96">
+              <div className="relative w-full lg:h-64 sm:h-72 md:h-80 lg:h-96 rounded-lg shadow-lg">
                 <Image
-                  src={"/your-image-path.jpg"}
+                  src={"/hero-image.png"}
                   alt="Hero Image"
                   layout="fill"
                   objectFit="cover"
                   className="rounded-lg"
                 />
               </div>
+              {/* <div className="hidden md:block">
+                <img src="../public/hero-image" alt="iSalesBook Dashboard" className="rounded-lg shadow-lg max-w-full h-auto" />
+              </div> */}
             </div>
           </div>
         </div>
@@ -237,11 +240,11 @@ export default function Home() {
             {[1, 2, 3].map((post) => (
               <div key={post} className="bg-white p-6 rounded-lg shadow-md">
                 <div className="relative w-full h-48">
-                  <Image 
-                    src={`/blog${post}.jpg`} 
-                    alt={`Blog Post ${post}`} 
-                    layout="fill" 
-                    objectFit="cover" 
+                  <Image
+                    src={`/blog${post}.jpg`}
+                    alt={`Blog Post ${post}`}
+                    layout="fill"
+                    objectFit="cover"
                     className="rounded-md"
                   />
                 </div>
@@ -254,7 +257,7 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-10 text-center">
-            <Link href="#" className="inline-block bg-orange-600 text-white px-6 py-3 rounded-md hover:bg-orange-700 transition-colors duration-300">
+            <Link href="/blog" className="inline-block bg-orange-600 text-white px-6 py-3 rounded-md hover:bg-orange-700 transition-colors duration-300">
               View All Posts
             </Link>
           </div>
