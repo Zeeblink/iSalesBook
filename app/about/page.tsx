@@ -13,7 +13,7 @@ const About = () => {
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">Our Story</h2>
               <p className="text-gray-600">
                 iSalesBook was founded with the mission to help businesses manage their inventory, sales, suppliers, purchases, and stores efficiently. 
-                We understand the challenges businesses face in today's fast-paced environment, and we're here to provide comprehensive solutions that 
+                We understand the challenges businesses face in today&apos;s fast-paced environment, and we&apos;re here to provide comprehensive solutions that 
                 streamline operations and drive success.
               </p>
             </div>

@@ -30,7 +30,7 @@ const Blog = () => {
                 />
                 <h2 className="text-2xl font-semibold text-gray-800 mb-2">{post.title}</h2>
                 <p className="text-gray-600 mb-4">
-                  A brief excerpt from the blog post to give readers an idea of what it's about. This is a summary or snippet of the content.
+                  A brief excerpt from the blog post to give readers an idea of what it&apos;s about. This is a summary or snippet of the content.
                 </p>
                 <Link href={`/blog/${post.id}`} className="text-orange-600 hover:text-orange-800">
                   Read More

@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="">
       {/* Hero sction */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20 h-screen">
+      <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 text-center lg:text-left">
@@ -33,7 +33,7 @@ export default function Home() {
             <div className="lg:w-1/2 mt-8 lg:mt-0">
               <div className="relative w-full lg:h-64 sm:h-72 md:h-80 lg:h-96 rounded-lg shadow-lg">
                 <Image
-                  src={"/hero-image.png"}
+                  src={"/hero-imagee.png"}
                   alt="Hero Image"
                   layout="fill"
                   objectFit="cover"
@@ -147,7 +147,7 @@ export default function Home() {
                     className="rounded-full"
                   />
                 </div>
-                <p className="text-gray-600">"iSalesBook has transformed our inventory management. It's efficient and easy to use."</p>
+                <p className="text-gray-600">&quot;iSalesBook has transformed our inventory management. It&apos;s efficient and easy to use.&quot;</p>
                 <h3 className="mt-4 text-xl font-semibold text-gray-800">John Doe</h3>
                 <p className="text-gray-500">CEO, Company A</p>
               </div>
@@ -161,7 +161,7 @@ export default function Home() {
                     className="rounded-full"
                   />
                 </div>
-                <p className="text-gray-600">"The best software for managing sales and suppliers. Highly recommend!"</p>
+                <p className="text-gray-600">&quot;The best software for managing sales and suppliers. Highly recommend!&quot;</p>
                 <h3 className="mt-4 text-xl font-semibold text-gray-800">Jane Smith</h3>
                 <p className="text-gray-500">Manager, Company B</p>
               </div>
@@ -175,7 +175,7 @@ export default function Home() {
                     className="rounded-full"
                   />
                 </div>
-                <p className="text-gray-600">"iSalesBook has made our store operations seamless. A must-have tool."</p>
+                <p className="text-gray-600">&quot;iSalesBook has made our store operations seamless. A must-have tool.&quot;</p>
                 <h3 className="mt-4 text-xl font-semibold text-gray-800">Alice Johnson</h3>
                 <p className="text-gray-500">Owner, Company C</p>
               </div>
@@ -249,7 +249,7 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="mt-4 text-xl font-semibold text-gray-800">Blog Post Title {post}</h3>
-                <p className="mt-2 text-gray-600">A brief excerpt from the blog post to give readers an idea of what it's about.</p>
+                <p className="mt-2 text-gray-600">A brief excerpt from the blog post to give readers an idea of what it&apos;s about.</p>
                 <Link href="#" className="mt-4 inline-block text-orange-600 hover:text-orange-700 transition-colors duration-300">
                   Read More
                 </Link>

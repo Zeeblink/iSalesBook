@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface HeaderProps { }
 
@@ -14,8 +15,19 @@ const Header: React.FC<HeaderProps> = () => {
         <header className="bg-white shadow">
             <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center p-4 md:p-6">
                 <div className="flex justify-between items-center w-full lg:w-auto lg:mb-0">
-                    <div className="text-2xl font-bold text-orange-600">
-                        <Link href="/">iSalesBook</Link>
+                    <div className='flex items-center'>
+                        <div className="relative h-10 w-10 "> {/* Adjust size as needed */}
+                            <Image
+                                src="/logo-icon.png"
+                                alt="Logo"
+                                layout="fill"
+                                objectFit="contain"
+                                className="rounded-lg"
+                            />
+                        </div>
+                        <div className="text-2xl font-bold text-orange-600">
+                            <Link href="/">iSalesBook</Link>
+                        </div>
                     </div>
                     <button onClick={toggleMenu} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
