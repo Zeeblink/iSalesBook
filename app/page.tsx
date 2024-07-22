@@ -34,7 +34,7 @@ export default function Home() {
             <div className="hidden lg:block lg:w-1/2 mt-8 lg:mt-0">
               <div className="relative w-full lg:h-64 sm:h-72 md:h-80 lg:h-96 rounded-lg shadow-lg">
                 <Image
-                  src={"/hero-imagee.png"}
+                  src={"/hero-image.png"}
                   alt="Hero Image"
                   layout="fill"
                   objectFit="cover"

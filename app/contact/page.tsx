@@ -12,9 +12,9 @@ const page = () => {
                             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Contact Information</h2>
                             <p className="text-gray-600 mb-4">Feel free to reach out to us through any of the following ways:</p>
                             <ul className="text-gray-600 space-y-2">
-                                <li><strong>Phone:</strong> (123) 456-7890</li>
-                                <li><strong>Email:</strong> support@isalesbook.com</li>
-                                <li><strong>Address:</strong> 123 Business St, Suite 100, Business City, BC 12345</li>
+                                <li><strong>Phone:</strong> (+234) 812 961 7910</li>
+                                <li><strong>Email:</strong> info@isalesbook.com</li>
+                                <li><strong>Address:</strong> 14 Adam's Manuel Street sabo yaba lagos Nigeria</li>
                             </ul>
                         </div>
                         <div className="bg-gray-100 p-8 rounded-lg shadow-md">
