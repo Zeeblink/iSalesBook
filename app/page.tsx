@@ -10,11 +10,11 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 text-center lg:text-left">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
-                Streamline Your Business Operations with Ease
+              <h1 className="text-4xl sm:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
+                PRODUCTS INVENTORY & SALES
               </h1>
               <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-lg mx-auto lg:mx-0">
-                Comprehensive solutions for managing inventory, sales, suppliers, and more.
+              Efficient record-keeping, capturing sales, managing production, tracking stock and inventory, and facilitating product, purchase, sales, suppliers, and invite link management.
               </p>
               <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center lg:justify-start">
                 <Link
