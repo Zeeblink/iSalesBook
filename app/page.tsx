@@ -50,10 +50,10 @@ export default function Home() {
 
       {/* Video */}
 
-      <div className="bg-gray-800 text-white py-12 text-center">
+      <div className="bg-gray-800 text-white py-20 lg:px-60 text-center">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-6">
-          Where subscription expertise meets growth
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+          Where subscription <br/>expertise meets growth
         </h2>
         <p className="text-lg mb-8">
           With a 388% increase in subscribers over the past five years, iSalesBook offers deep expertise in subscription management, billing, and churn management. In short? We take your growth seriously.
