@@ -14,7 +14,7 @@ const page = () => {
                             <ul className="text-gray-600 space-y-2">
                                 <li><strong>Phone:</strong> (+234) 812 961 7910</li>
                                 <li><strong>Email:</strong> info@isalesbook.com</li>
-                                <li><strong>Address:</strong> 14 Adam's Manuel Street sabo yaba lagos Nigeria</li>
+                                <li><strong>Address:</strong> 14 Adam&apos;s Manuel Street sabo yaba lagos Nigeria</li>
                             </ul>
                         </div>
                         <div className="bg-gray-100 p-8 rounded-lg shadow-md">

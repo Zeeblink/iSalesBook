@@ -21,7 +21,7 @@ const About = () => {
               {/* <h2 className="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h2> */}
               <p className="text-gray-600">
               Rdas Solutions Limited, formally known as RDAS Softtech, is an IT company founded solely for the main purpose of helping Small and Large Scale businesses manage their data without having to lose sight of their growth and development. 
-              We offer a wide range of services by combining innovative approach, creative thinking and a full understanding of today's fast moving technology world, to market your services to the online world.
+              We offer a wide range of services by combining innovative approach, creative thinking and a full understanding of today&apos;s fast moving technology world, to market your services to the online world.
               </p>
             </div>
           </div>
