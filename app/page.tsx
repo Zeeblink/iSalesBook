@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="">
       {/* Hero sction */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20">
+      <section className="bg-white py-20 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 text-center lg:text-left">
@@ -30,7 +30,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="lg:w-1/2 mt-8 lg:mt-0">
+            <div className="hidden lg:block lg:w-1/2 mt-8 lg:mt-0">
               <div className="relative w-full lg:h-64 sm:h-72 md:h-80 lg:h-96 rounded-lg shadow-lg">
                 <Image
                   src={"/hero-imagee.png"}
