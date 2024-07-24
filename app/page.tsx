@@ -73,7 +73,7 @@ export default function Home() {
       <Features/>
 
       {/* Testimonials */}
-      <section className="bg-gray-100 py-12 sm:py-16 lg:py-20">
+      {/* <section className="bg-gray-100 py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800">What Our Customers Say</h2>
           <div className="mt-10">
@@ -123,7 +123,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Prcing */}
       <section id="pricing" className="bg-white py-12 sm:py-16 lg:py-20">

@@ -57,7 +57,7 @@ const Features = () => {
       {/* Features Section */}
       <section id="features" className="bg-gray-100 py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800">Features</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800">What iSalesBook can do</h2>
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
             {features.map((feature, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105">
