@@ -9,7 +9,7 @@ export async function POST(req: NextRequest) {
   if (!name || !email || !company || !message) {
     return NextResponse.json({ message: 'All fields are required.' }, { status: 400 });
   }
-  const testAccount = await nodemailer.createTestAccount();
+//   const testAccount = await nodemailer.createTestAccount();
   
   // Create a transporter object
   const transporter = nodemailer.createTransport({
@@ -17,10 +17,10 @@ export async function POST(req: NextRequest) {
     port: parseInt(process.env.SMTP_PORT as string, 10),
     secure: false,
     auth: {
-        user: testAccount.user,
-        pass: testAccount.pass,
-    //   user: process.env.SMTP_USER,
-    //   pass: process.env.SMTP_PASS,
+        // user: testAccount.user,
+        // pass: testAccount.pass,
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
     },
   });
 
