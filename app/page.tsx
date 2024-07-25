@@ -24,7 +24,7 @@ export default function Home() {
                   Request a demo
                 </Link>
                 <Link
-                  href="#"
+                  href="/about"
                   className="inline-block bg-gray-200 text-gray-800 px-6 py-3 rounded-md text-base font-medium hover:bg-gray-300 transition-colors duration-300"
                 >
                   Learn More
