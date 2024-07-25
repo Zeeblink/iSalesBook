@@ -1,17 +1,39 @@
-import { FC } from 'react';
+"use client"
+import { FC, useState } from 'react';
 import Link from 'next/link';
+import axios from 'axios';
+import { useRouter } from 'next/navigation';
 
 const SignIn: FC = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const router = useRouter();
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('/api/auth/login', { email, password });
+      console.log(response.data);
+      router.push('/dashboard'); // Redirect to the dashboard after successful login
+    } catch (error: any) {
+      setError(error.response?.data?.message || 'An error occurred');
+    }
+  };
+
   return (
     <div className="bg-gray-100 min-h-screen flex items-center justify-center">
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
         <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">Sign In</h1>
-        <form className="space-y-6">
+        {error && <p className="text-red-600">{error}</p>}
+        <form className="space-y-6" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="email" className="block text-gray-600">Email</label>
             <input
               type="email"
               id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-600"
               required
             />
@@ -21,6 +43,8 @@ const SignIn: FC = () => {
             <input
               type="password"
               id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-600"
               required
             />
