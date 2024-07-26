@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Features from "./components/Features";
+import Faq from "./components/Faq";
+
 
 export default function Home() {
   return (
@@ -126,7 +128,7 @@ export default function Home() {
       </section> */}
 
       {/* Prcing */}
-      <section id="pricing" className="bg-white py-12 sm:py-16 lg:py-20">
+      {/* <section id="pricing" className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800">Pricing Plans</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
@@ -171,8 +173,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-
+      </section> */}
+      <Faq/>
       {/* Recent blog posts */}
       <section className="bg-gray-100 py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

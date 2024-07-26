@@ -3,20 +3,24 @@ import { useState, FC } from 'react';
 
 const faqData = [
   {
-    question: 'What is iSalesBook?',
-    answer: 'iSalesBook is a software solution designed to help businesses manage their inventory, sales, suppliers, purchases, and stores efficiently.'
+    question: 'What is iSalesBook software?',
+    answer: 'iSalesBook is a software solution designed to manage inventory, sales, suppliers, purchases, and stores for businesses. It provides a comprehensive set of features to streamline and automate various aspects of the supply chain and retail operations.'
+  },
+  {
+    question: 'What is iSalesBook used for?',
+    answer: 'iSalesBook is used to manage all types of inventory and sales records. Picture it as a traditional sales book.'
   },
   {
     question: 'How can iSalesBook benefit my business?',
     answer: 'iSalesBook can streamline your business operations, increase efficiency, reduce costs, improve accuracy, and enhance customer satisfaction.'
   },
   {
-    question: 'Is iSalesBook easy to use?',
-    answer: 'Yes, iSalesBook is designed with user-friendliness in mind, making it easy for businesses of all sizes to implement and use.'
+    question: 'What are the key features os iSlaesBook?',
+    answer: 'iSalesBook offers features like automated inventory tracking, sales and purchase order management, supplier management, store management, reporting and analytics, and more'
   },
   {
-    question: 'What features does iSalesBook offer?',
-    answer: 'iSalesBook offers features such as inventory management, sales tracking, supplier management, purchase orders, and store management.'
+    question: 'Is iSalesBook easy to use?',
+    answer: 'Yes, iSalesBook is designed with user-friendliness in mind, making it easy for businesses of all sizes to implement and use.'
   },
   {
     question: 'How can I get started with iSalesBook?',
