@@ -10,6 +10,7 @@ const Header: React.FC<HeaderProps> = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
+    const closeMenu = () => setIsOpen(false);
 
     return (
         <header className="bg-white shadow">
@@ -26,7 +27,7 @@ const Header: React.FC<HeaderProps> = () => {
                             />
                         </div>
                         <div className="text-2xl font-bold text-orange-600">
-                            <Link href="/">iSalesBook</Link>
+                            <Link href="/" onClick={closeMenu}>iSalesBook</Link>
                         </div>
                     </div>
                     <button onClick={toggleMenu} className="btn btn-ghost lg:hidden">
@@ -40,10 +41,7 @@ const Header: React.FC<HeaderProps> = () => {
                         Home
                     </Link>
                     <Link href="#features" className="block text-gray-700 hover:text-orange-600">
-                        Features
-                    </Link>
-                    <Link href="#pricing" className="block text-gray-700 hover:text-orange-600">
-                        Pricing
+                        Services
                     </Link>
                     <Link href="/blog" className="block text-gray-700 hover:text-orange-600">
                         Blog
@@ -70,7 +68,7 @@ const Header: React.FC<HeaderProps> = () => {
             {isOpen && (
                 <div className="lg:hidden absolute top-0 left-0 w-full bg-white shadow-md p-6 space-y-4 animate-slide-in">
                     <div className="flex justify-between items-center mb-4">
-                        <div className="text-2xl font-bold text-orange-600"><Link href="/">
+                        <div className="text-2xl font-bold text-orange-600"><Link href="/" onClick={closeMenu}>
                             iSalesBook</Link></div>
                         <button onClick={toggleMenu} className="btn btn-ghost">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -79,31 +77,28 @@ const Header: React.FC<HeaderProps> = () => {
                         </button>
                     </div>
                     <nav className="flex flex-col space-y-4">
-                        <Link href="/" className="block text-gray-700 hover:text-orange-600">
+                        <Link href="/" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
                             Home
                         </Link>
-                        <Link href="#features" className="block text-gray-700 hover:text-orange-600">
-                            Features
+                        <Link href="#features" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
+                            Services
                         </Link>
-                        <Link href="#pricing" className="block text-gray-700 hover:text-orange-600">
-                            Pricing
-                        </Link>
-                        <Link href="/blog" className="block text-gray-700 hover:text-orange-600">
+                        <Link href="/blog" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
                             Blog
                         </Link>
-                        <Link href="#faq" className="block text-gray-700 hover:text-orange-600">
+                        <Link href="#faq" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
                             FAQs
                         </Link>
-                        <Link href="/about" className="block text-gray-700 hover:text-orange-600">
+                        <Link href="/about" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
                             About Us
                         </Link>
-                        <Link href="/contact" className="block text-gray-700 hover:text-orange-600">
+                        <Link href="/contact" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
                             Contact
                         </Link>
-                        <Link href="/login" className="btn btn-sm">
+                        <Link href="/login" className="btn btn-sm" onClick={closeMenu}>
                             Log In
                         </Link>
-                        <Link href="/request-demo" className="block bg-orange-600 text-white px-6 py-3 rounded-md text-center">
+                        <Link href="/request-demo" className="block bg-orange-600 text-white px-6 py-3 rounded-md text-center" onClick={closeMenu}>
                             Request a demo
                         </Link>
                     </nav>
