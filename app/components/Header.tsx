@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = () => {
                     <Link href="/blog" className="block text-gray-700 hover:text-orange-600">
                         Blog
                     </Link>
-                    <Link href="/faq" className="block text-gray-700 hover:text-orange-600">
+                    <Link href="#faq" className="block text-gray-700 hover:text-orange-600">
                         FAQs
                     </Link>
                     <Link href="/about" className="block text-gray-700 hover:text-orange-600">
@@ -91,7 +91,7 @@ const Header: React.FC<HeaderProps> = () => {
                         <Link href="/blog" className="block text-gray-700 hover:text-orange-600">
                             Blog
                         </Link>
-                        <Link href="/faq" className="block text-gray-700 hover:text-orange-600">
+                        <Link href="#faq" className="block text-gray-700 hover:text-orange-600">
                             FAQs
                         </Link>
                         <Link href="/about" className="block text-gray-700 hover:text-orange-600">

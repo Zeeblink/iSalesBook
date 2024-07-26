@@ -19,16 +19,16 @@ const faqData = [
       answer: 'iSalesBook offers features like automated inventory tracking, sales and purchase order management, supplier management, store management, reporting and analytics, and more'
     },
     {
-      question: 'Is iSalesBook easy to use?',
-      answer: 'Yes, iSalesBook is designed with user-friendliness in mind, making it easy for businesses of all sizes to implement and use.'
+      question: 'What offers can I get if I start using the application?',
+      answer: 'You have the first two months free. You can even cancel your subscription within the period.'
     },
     {
       question: 'How can I get started with iSalesBook?',
-      answer: 'You can get started with iSalesBook by signing up for a free trial on our website. For more details, visit our Pricing page.'
+      answer: 'You can get in touch with us via phone, email, WhatsApp or our social media handles to indicate interest. We will send the link to the application so you can register your products and start using the application.'
     },
     {
       question: 'How do I contact customer support?',
-      answer: 'You can contact our customer support team via email at support@isalesbook.com or by phone at (123) 456-7890.'
+      answer: 'You can contact our customer support team via email at info@isalesbook.com or by phone at (+234) 812 961 7910.'
     }
   ];
 
@@ -44,7 +44,7 @@ const Faq:React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div id='faq' className="bg-gray-100 min-h-screen">
       <section className="bg-white py-16">
         <div className="container mx-auto px-6 lg:px-0">
           <h1 className="text-4xl font-bold text-gray-800 text-center">Frequently Asked Questions</h1>
