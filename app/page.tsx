@@ -16,7 +16,7 @@ export default function Home() {
                 PRODUCTS INVENTORY & SALES
               </h1>
               <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-lg mx-auto lg:mx-0">
-              Efficient record-keeping, capturing sales, managing production, tracking stock and inventory, and facilitating product, purchase, sales, suppliers, and invite link management.
+                Efficient record-keeping, capturing sales, managing production, tracking stock and inventory, and facilitating product, purchase, sales, suppliers, and invite link management.
               </p>
               <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center lg:justify-start">
                 <Link
@@ -54,25 +54,23 @@ export default function Home() {
       {/* Video */}
 
       <div className="bg-gray-800 text-white py-20 lg:px-60 text-center">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-          Where subscription <br/>expertise meets growth
-        </h2>
-        <p className="text-lg mb-8">
-          With a 388% increase in subscribers over the past five years, iSalesBook offers deep expertise in subscription management, billing, and churn management. In short? We take your growth seriously.
-        </p>
-        <div className="relative">
-          <iframe
-            className="w-full h-64 md:h-96"
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-            title="Video title"
-            allowFullScreen
-          ></iframe>
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
+            Unleash the Power of Efficient Inventory Management
+          </h2>
+          <p className="text-lg mb-8">Discover how iSalesBook can streamline your business operations with inventory tracking, real-time analytics, and seamless integration</p>
+          <div className="relative">
+            <iframe
+              className="w-full h-64 md:h-96"
+              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              title="Video title"
+              allowFullScreen
+            ></iframe>
+          </div>
         </div>
       </div>
-    </div>
 
-      <Features/>
+      <Features />
 
       {/* Testimonials */}
       {/* <section className="bg-gray-100 py-12 sm:py-16 lg:py-20">
@@ -174,7 +172,7 @@ export default function Home() {
           </div>
         </div>
       </section> */}
-      <Faq/>
+      <Faq />
       {/* Recent blog posts */}
       <section className="bg-gray-100 py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

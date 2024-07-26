@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 const DashboardLayout = ({ children }: { children: ReactNode }) => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
-      <header className="bg-white shadow-md">
+      {/* <header className="bg-white shadow-md">
         <div className="container mx-auto flex justify-between items-center p-6">
           <div className="text-2xl font-bold text-orange-600">iSalesBook</div>
           <nav className="space-x-6 hidden md:flex">
@@ -27,7 +27,7 @@ const DashboardLayout = ({ children }: { children: ReactNode }) => {
             <a href="/logout" className="bg-orange-600 text-white px-4 py-2 rounded-md">Logout</a>
           </nav>
         </div>
-      </header>
+      </header> */}
 
       <main className="container mx-auto p-6 flex-grow">
         {children}
