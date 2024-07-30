@@ -43,9 +43,9 @@ const Header: React.FC<HeaderProps> = () => {
                     <Link href="#features" className="block text-gray-700 hover:text-orange-600">
                         Services
                     </Link>
-                    <Link href="/blog" className="block text-gray-700 hover:text-orange-600">
+                    {/* <Link href="/blog" className="block text-gray-700 hover:text-orange-600">
                         Blog
-                    </Link>
+                    </Link> */}
                     <Link href="#faq" className="block text-gray-700 hover:text-orange-600">
                         FAQs
                     </Link>
@@ -83,9 +83,9 @@ const Header: React.FC<HeaderProps> = () => {
                         <Link href="#features" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
                             Services
                         </Link>
-                        <Link href="/blog" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
+                        {/* <Link href="/blog" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
                             Blog
-                        </Link>
+                        </Link> */}
                         <Link href="#faq" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
                             FAQs
                         </Link>
