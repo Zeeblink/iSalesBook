@@ -11,8 +11,8 @@ export default function Home() {
       <section className="bg-white py-20 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 text-center lg:text-left">
-              <h1 className="text-4xl sm:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
+            <div className="lg:w-1/2 text-center lg:text-left md:pr-3">
+              <h1 className="text-4xl sm:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight lg:leading-snug">
                 PRODUCTS INVENTORY & SALES
               </h1>
               <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-lg mx-auto lg:mx-0">
