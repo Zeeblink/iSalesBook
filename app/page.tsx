@@ -59,11 +59,12 @@ export default function Home() {
             Unleash the Power of Efficient Inventory Management
           </h2>
           <p className="text-lg mb-8">Discover how iSalesBook can streamline your business operations with inventory tracking, real-time analytics, and seamless integration</p>
-          <div className="relative">
+          <div className="relative overflow-hidden" style={{ paddingTop: '56.25%' }}>
             <iframe
-              className="w-full h-64 md:h-96"
-              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/30YNNFuosf0"
               title="Video title"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           </div>
@@ -174,7 +175,7 @@ export default function Home() {
       </section> */}
       <Faq />
       {/* Recent blog posts */}
-      <section className="bg-gray-100 py-12 sm:py-16 lg:py-20">
+      {/* <section className="bg-gray-100 py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800">Recent Blog Posts</h2>
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
@@ -203,7 +204,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call-to-Action Section */}
       <section className="bg-white py-12 sm:py-16 lg:py-20">
