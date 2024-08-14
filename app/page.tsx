@@ -2,11 +2,26 @@ import Image from "next/image";
 import Link from "next/link";
 import Features from "./components/Features";
 import Faq from "./components/Faq";
+import Script from "next/script";
 
 
 export default function Home() {
   return (
     <main className="">
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-XXXXXXXXXX', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
       {/* Hero sction */}
       <section className="bg-white py-20 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
