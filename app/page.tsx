@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="">
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-84CF431TZP`}
         strategy="afterInteractive"
       />
       <Script id="google-analytics" strategy="afterInteractive">
