@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
             from: 'no-reply',
             to: 'info@isalesbook.com',
             subject: `New Contact Message`,
-            html: `<p>'You have a new contact message from:', // Subject line:</p>
+            html: `<p>'You have a new contact message from:</p>
              <p><strong>Name:</strong> ${name}</p>
              <p><strong>Email:</strong> ${email}</p>
              <p><strong>Message:</strong> ${message}</p>`
