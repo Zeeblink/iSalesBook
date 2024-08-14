@@ -9,7 +9,6 @@ export async function POST(req: NextRequest) {
   if (!name || !email || !company || !message) {
     return NextResponse.json({ message: 'All fields are required.' }, { status: 400 });
   }
-//   const testAccount = await nodemailer.createTestAccount();
   
   // Create a transporter object
   const transporter = nodemailer.createTransport({
@@ -17,8 +16,6 @@ export async function POST(req: NextRequest) {
     port: parseInt(process.env.SMTP_PORT as string, 10),
     secure: false,
     auth: {
-        // user: testAccount.user,
-        // pass: testAccount.pass,
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
     },
@@ -29,7 +26,7 @@ export async function POST(req: NextRequest) {
   try {
     // Send email to sales team
     await transporter.sendMail({
-      from: 'no-reply@example.com', // sender address
+      from: 'no-reply', // sender address
       to: salesTeamEmail, // list of receivers
       subject: 'New Demo Request', // Subject line
       html: `<p>You have a new demo request from:</p>
