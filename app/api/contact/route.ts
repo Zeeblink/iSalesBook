@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
             html: `<p>'You have a new contact message from:</p>
              <p><strong>Name:</strong> ${name}</p>
              <p><strong>Email:</strong> ${email}</p>
-             <p><strong>Email:</strong> ${phone}</p>
+             <p><strong>Phone:</strong> ${phone}</p>
              <p><strong>Message:</strong> ${message}</p>`
         })
 
