@@ -5,6 +5,7 @@ const Page = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        phone: '',
         message: ''
     });
 
@@ -20,6 +21,16 @@ const Page = () => {
         }));
     };
 
+    const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const { value } = e.target;
+        // Only allow numeric input
+        const numericValue = value.replace(/[^0-9]/g, '');
+        setFormData(prevState => ({
+            ...prevState,
+            phone: numericValue
+        }));
+    };
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
@@ -27,7 +38,7 @@ const Page = () => {
         setSuccessMessage('');
 
         // Validate form
-        if (!formData.name || !formData.email || !formData.message) {
+        if (!formData.name || !formData.email || !formData.phone || !formData.message) {
             setErrorMessage('All fields are required.');
             setIsSubmitting(false);
             return;
@@ -47,6 +58,7 @@ const Page = () => {
                 setFormData({
                     name: '',
                     email: '',
+                    phone: '',
                     message: ''
                 });
             } else {
@@ -98,6 +110,17 @@ const Page = () => {
                                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-600"
                                     value={formData.email}
                                     onChange={handleChange}
+                                    required
+                                />
+                            </div>
+                            <div>
+                                <label htmlFor="phone" className="block text-gray-600">Phone Number</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-orange-600"
+                                    value={formData.phone}
+                                    onChange={handlePhoneChange}
                                     required
                                 />
                             </div>

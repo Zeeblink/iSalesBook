@@ -1,5 +1,3 @@
-"use client"
-import React, {useState} from 'react'
 
 const faqData = [
     {
@@ -32,38 +30,20 @@ const faqData = [
     }
   ];
 
-const Faq:React.FC = () => {
-    const [openIndexes, setOpenIndexes] = useState<number[]>([]);
-
-  const toggleFAQ = (index: number) => {
-    if (openIndexes.includes(index)) {
-      setOpenIndexes(openIndexes.filter((i) => i !== index));
-    } else {
-      setOpenIndexes([...openIndexes, index]);
-    }
-  };
-
+const Faq: React.FC = () => {
   return (
     <div id='faq' className="bg-gray-100 min-h-screen">
       <section className="bg-white py-16">
         <div className="container mx-auto px-6 lg:px-0">
           <h1 className="text-4xl font-bold text-gray-800 text-center">Frequently Asked Questions</h1>
-          {/* <p className="mt-4 text-lg text-gray-600 text-center">Find answers to common questions about iSalesBook</p> */}
 
           <div className="mt-10">
             {faqData.map((faq, index) => (
               <div key={index} className="mb-6">
-                <div
-                  onClick={() => toggleFAQ(index)}
-                  className="cursor-pointer bg-gray-100 p-4 rounded-lg shadow-md hover:bg-gray-200 transition-colors duration-200 ease-in-out"
-                >
+                <div className="bg-gray-100 p-4 rounded-lg shadow-md">
                   <h2 className="text-xl font-semibold text-gray-800">{faq.question}</h2>
                 </div>
-                <div
-                  className={`mt-2 p-4 border-l-4 border-orange-600 bg-gray-50 rounded-lg shadow-md transition-max-height duration-300 ease-in-out ${
-                    openIndexes.includes(index) ? 'max-h-96' : 'max-h-0 overflow-hidden'
-                  }`}
-                >
+                <div className="mt-2 p-4 border-l-4 border-orange-600 bg-gray-50 rounded-lg shadow-md">
                   <p className="text-gray-600">{faq.answer}</p>
                 </div>
               </div>
@@ -75,4 +55,4 @@ const Faq:React.FC = () => {
   )
 }
 
-export default Faq
+export default Faq;

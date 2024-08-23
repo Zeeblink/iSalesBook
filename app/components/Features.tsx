@@ -73,7 +73,7 @@ const Features = () => {
       {/* Benefits Section */}
       <section className="bg-white py-12 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800">Benefits</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800">Benefits of iSalesBook</h2>
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
             {benefits.map((benefit, index) => (
               <div key={index} className="text-center transition-transform transform hover:scale-105">
