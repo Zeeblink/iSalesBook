@@ -3,11 +3,11 @@ import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 
 export async function POST(req: NextRequest) {
-  const { name, email, company, message } = await req.json();
+  const { name, email, company, phone, message } = await req.json();
 
   // Basic validation
-  if (!name || !email || !company || !message) {
-    return NextResponse.json({ message: 'All fields are required.' }, { status: 400 });
+  if (!name || !email || !phone || !message) {
+    return NextResponse.json({ message: 'All fields except company are required.' }, { status: 400 });
   }
   
   // Create a transporter object
@@ -32,20 +32,21 @@ export async function POST(req: NextRequest) {
       html: `<p>You have a new demo request from:</p>
              <p><strong>Name:</strong> ${name}</p>
              <p><strong>Email:</strong> ${email}</p>
+             <p><strong>Phone:</strong> ${phone}</p>
              <p><strong>Company:</strong> ${company}</p>
              <p><strong>Message:</strong> ${message}</p>`
     });
 
     // Send confirmation email to the visitor
-    await transporter.sendMail({
-      from: 'no-reply@example.com', // sender address
-      to: email, // list of receivers
-      subject: 'Your Demo Request Received', // Subject line
-      html: `<p>Hi ${name},</p>
-             <p>Thank you for requesting a demo. Our sales team will get back to you shortly.</p>
-             <p>Best regards,</p>
-             <p>The iSalesBook Team</p>`
-    });
+    // await transporter.sendMail({
+    //   from: 'no-reply@example.com', // sender address
+    //   to: email, // list of receivers
+    //   subject: 'Your Demo Request Received', // Subject line
+    //   html: `<p>Hi ${name},</p>
+    //          <p>Thank you for requesting a demo. Our sales team will get back to you shortly.</p>
+    //          <p>Best regards,</p>
+    //          <p>The iSalesBook Team</p>`
+    // });
 
     return NextResponse.json({ message: 'Your request has been sent successfully!' }, { status: 200 });
   } catch (error) {

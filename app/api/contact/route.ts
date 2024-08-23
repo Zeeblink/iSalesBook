@@ -19,6 +19,7 @@ export async function POST(req: NextRequest) {
         }
     })
 
+    // send mail to the isalesbook team
     try {
         await transporter.sendMail({
             from: 'no-reply',

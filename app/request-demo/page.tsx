@@ -5,7 +5,8 @@ const RequestDemo: FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    company: '',
+    company: '', // Company field is now optional
+    phone: '', 
     message: ''
   });
 
@@ -21,6 +22,16 @@ const RequestDemo: FC = () => {
     }));
   };
 
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { value } = e.target;
+    // Allow numbers, spaces, and the + character
+    const formattedValue = value.replace(/[^0-9+\s]/g, '');
+    setFormData(prevState => ({
+      ...prevState,
+      phone: formattedValue
+    }));
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -28,8 +39,8 @@ const RequestDemo: FC = () => {
     setSuccessMessage('');
 
     // Validate form
-    if (!formData.name || !formData.email || !formData.company || !formData.message) {
-      setErrorMessage('All fields are required.');
+    if (!formData.name || !formData.email || !formData.phone || !formData.message) {
+      setErrorMessage('All fields except company are required.');
       setIsSubmitting(false);
       return;
     }
@@ -48,7 +59,8 @@ const RequestDemo: FC = () => {
         setFormData({
           name: '',
           email: '',
-          company: '',
+          company: '', // Reset company field
+          phone: '',
           message: ''
         });
       } else {
@@ -105,6 +117,18 @@ const RequestDemo: FC = () => {
               className="input input-bordered w-full"
               value={formData.company}
               onChange={handleChange}
+            />
+          </div>
+          <div className="form-control">
+            <label htmlFor="phone" className="label">
+              <span className="label-text">Phone Number</span>
+            </label>
+            <input
+              type="tel"
+              id="phone"
+              className="input input-bordered w-full"
+              value={formData.phone}
+              onChange={handlePhoneChange} 
               required
             />
           </div>

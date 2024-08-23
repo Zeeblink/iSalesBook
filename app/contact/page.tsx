@@ -23,11 +23,11 @@ const Page = () => {
 
     const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { value } = e.target;
-        // Only allow numeric input
-        const numericValue = value.replace(/[^0-9]/g, '');
+        // Allow numbers, spaces, and the + character
+        const formattedValue = value.replace(/[^0-9+\s]/g, '');
         setFormData(prevState => ({
             ...prevState,
-            phone: numericValue
+            phone: formattedValue
         }));
     };
 
