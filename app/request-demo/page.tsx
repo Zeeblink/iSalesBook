@@ -5,7 +5,7 @@ const RequestDemo: FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    company: '', // Company field is now optional
+    company: '', // Company field is optional
     phone: '', 
     message: ''
   });
