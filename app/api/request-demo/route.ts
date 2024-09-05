@@ -22,12 +22,15 @@ export async function POST(req: NextRequest) {
   });
 
   const salesTeamEmail = process.env.SALES_TEAM_EMAIL as string;
-
+  
   try {
     // Send email to sales team
     await transporter.sendMail({
-      from: 'no-reply', // sender address
-      to: salesTeamEmail, // list of receivers
+      from: {
+        name: 'iSalesBook Demo Request', // This will be displayed as the sender name
+        address: salesTeamEmail // This email address will be hidden
+      }, // sender address
+      to: [salesTeamEmail, "davincin222@gmail.com", "eabiodun45@gmail.com"], // list of receivers
       subject: 'New Demo Request', // Subject line
       html: `<p>You have a new demo request from:</p>
              <p><strong>Name:</strong> ${name}</p>
