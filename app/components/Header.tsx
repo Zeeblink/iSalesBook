@@ -40,13 +40,13 @@ const Header: React.FC<HeaderProps> = () => {
                     <Link href="/" className="block text-gray-700 hover:text-orange-600">
                         Home
                     </Link>
-                    <Link href="#features" className="block text-gray-700 hover:text-orange-600">
+                    <Link href="/#features" className="block text-gray-700 hover:text-orange-600">
                         Services
                     </Link>
                     {/* <Link href="/blog" className="block text-gray-700 hover:text-orange-600">
                         Blog
                     </Link> */}
-                    <Link href="#faq" className="block text-gray-700 hover:text-orange-600">
+                    <Link href="/#faq" className="block text-gray-700 hover:text-orange-600">
                         FAQs
                     </Link>
                     <Link href="/about" className="block text-gray-700 hover:text-orange-600">
@@ -56,10 +56,10 @@ const Header: React.FC<HeaderProps> = () => {
                         Contact
                     </Link>
                 </nav>
-                <div className="flex items-center hidden lg:flex">
-                    <Link href="/login" className="block w-full lg:inline-block lg:w-auto  text-gray-600 px-6 py-3 rounded-md text-center">
+                <div className="items-center hidden lg:flex">
+                    {/* <Link href="/login" className="block w-full lg:inline-block lg:w-auto  text-gray-600 px-6 py-3 rounded-md text-center">
                         Log In
-                    </Link>
+                    </Link> */}
                     <Link href="/request-demo" className="block w-full lg:inline-block lg:w-auto bg-orange-600 text-white px-6 py-3 rounded-md text-center">
                         Request a demo
                     </Link>
@@ -80,13 +80,13 @@ const Header: React.FC<HeaderProps> = () => {
                         <Link href="/" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
                             Home
                         </Link>
-                        <Link href="#features" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
+                        <Link href="/#features" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
                             Services
                         </Link>
                         {/* <Link href="/blog" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
                             Blog
                         </Link> */}
-                        <Link href="#faq" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
+                        <Link href="/#faq" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
                             FAQs
                         </Link>
                         <Link href="/about" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
@@ -95,9 +95,9 @@ const Header: React.FC<HeaderProps> = () => {
                         <Link href="/contact" className="block text-gray-700 hover:text-orange-600" onClick={closeMenu}>
                             Contact
                         </Link>
-                        <Link href="/login" className="btn btn-sm" onClick={closeMenu}>
+                        {/* <Link href="/login" className="btn btn-sm" onClick={closeMenu}>
                             Log In
-                        </Link>
+                        </Link> */}
                         <Link href="/request-demo" className="block bg-orange-600 text-white px-6 py-3 rounded-md text-center" onClick={closeMenu}>
                             Request a demo
                         </Link>
