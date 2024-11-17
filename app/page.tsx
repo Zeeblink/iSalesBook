@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Features from "./components/Features";
-import Faq from "./components/Faq";
+import Features from "@/components/Features";
+import Faq from "@/components/Faq";
 import Script from "next/script";
 
 
@@ -25,15 +25,15 @@ export default function Home() {
       {/* Hero sction */}
       <section className="bg-white py-20 sm:py-16 lg:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row items-center">
-            <div className="lg:w-1/2 text-center lg:text-left md:pr-3">
+          <div className="flex flex-col items-center">
+            <div className="text-center">
               <h1 className="text-4xl sm:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight lg:leading-snug">
                 PRODUCTS INVENTORY & SALES
               </h1>
-              <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-lg mx-auto lg:mx-0">
+              <p className="mt-4 text-base sm:text-lg text-gray-600 max-w-lg mx-auto">
                 Efficient record-keeping, capturing sales, managing production, tracking stock and inventory, and facilitating product, purchase, sales, suppliers, and invite link management.
               </p>
-              <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center lg:justify-start">
+              <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center">
                 <Link
                   href="/request-demo"
                   className="inline-block bg-orange-600 text-white px-6 py-3 rounded-md text-base font-medium hover:bg-orange-700 transition-colors duration-300"
@@ -48,43 +48,45 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="hidden lg:block lg:w-1/2 mt-8 lg:mt-0">
-              <div className="relative w-full sm:h-72 md:h-80 lg:h-96 rounded-lg shadow-lg">
-                <Image
-                  src={"/hero-image.png"}
-                  alt="Hero Image"
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
-                />
-              </div>
-              {/* <div className="hidden md:block">
-                <img src="../public/hero-image" alt="iSalesBook Dashboard" className="rounded-lg shadow-lg max-w-full h-auto" />
-              </div> */}
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Video */}
 
-      <div className="bg-gray-800 text-white py-20 lg:px-60 text-center">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
-            Unleash the Power of Efficient Inventory Management
-          </h2>
-          <p className="text-lg mb-8">Discover how iSalesBook can streamline your business operations with inventory tracking, real-time analytics, and seamless integration</p>
-          <div className="relative overflow-hidden" style={{ paddingTop: '56.25%' }}>
-            <iframe
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/30YNNFuosf0"
-              title="Video title"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+      {/* Video */}
+      <div className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/hero-image.png"
+          alt="iSalesBook platform showcase"
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/90 to-gray-900/80" />
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 py-20 lg:py-32">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+            Unleash the Power of{" "}
+            <span className="text-orange-500">
+              Efficient Inventory Management
+            </span>
+          </h1>
+          <p className="text-xl lg:text-2xl text-gray-200 mb-10 leading-relaxed">
+            Discover how iSalesBook can streamline your business operations with
+            inventory tracking, real-time analytics, and seamless integration
+          </p>
         </div>
       </div>
+
+      {/* Decorative Elements */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-900 to-transparent z-10" />
+    </div>
 
       <Features />
 
